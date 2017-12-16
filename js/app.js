@@ -5162,42 +5162,62 @@ var selectOption = function(event) {
   }
 
 }
-console.log(selectOption);
-
 
 function aqp1(){
   var students = data['AQP']['2016-2']['students'];
-  for(var i = 0; i < 4; i++){
-    var studentName = students[i].name;
-    var img = students[i].photo;
-    showInfo(name, photo);
+  for(var i = 0; i < students.length; i++){
+    var studentName = students[i]['name'];
+    var img = students[i]['photo'];
+
+    console.log(students);
+    console.log(studentName);
+    console.log(img);
+
+    var box = document.getElementById('contenedor');
+    var parragraph = document.createElement('p');
+    var image = document.createElement('img');
+    var boxStudent = document.createElement('div');
+
+    image.classList.add('foto');
+    boxStudent.classList.add('alumna');
+    parragraph.innerText = studentName;
+    image.src = img;
+
+    boxStudent.appendChild(parragraph);
+    boxStudent.appendChild(image);
+    box.appendChild(boxStudent);
+
+
   }
 
 }
+aqp1();
 
-function aqp2(){
-  var students = data['AQP']['2017-1']['students'];
-  document.getElementById('contenedor').innerHTML= ""
-  for(var i = 0; i < 4; i++){
-    var studentName = students[i].name;
-    var img = students[i].photo;
-    showInfo(name, photo);
-  }
-}
+//box.innerHTML = "";
 
-var showInfo = function(name, photo){
-   var box = document.getElementById('contenedor');
-   var parragraph = document.createElement('p');
-   var image = document.createElement('img');
-   var boxStudent = document.createElement('div');
+//function aqp2(){
+  //var students = data['AQP']['2017-1']['students'];
+  //document.getElementById('contenedor').innerHTML= ""
+  //for(var i = 0; i < 4; i++){
+  //  var studentName = students[i].name;
+  //  var img = students[i].photo;
+  //  showInfo(name, photo);
+  //}
+//}
 
-   image.classList.add('foto');
-   boxStudent.classList.add('alumna');
-   parragraph.innerText = name;
+//var showInfo = function(){
+   //var box = document.getElementById('contenedor');
+  // var parragraph = document.createElement('p');
+  // var image = document.createElement('img');
+  // var boxStudent = document.createElement('div');
 
-   boxStudent.appendChild(parragraph);
-   box.appendChild(boxStudent);
- }
+  // image.classList.add('foto');
+  // boxStudent.classList.add('alumna');
+  // parragraph.innerText = name;
+
+  // boxStudent.appendChild(parragraph);
+  // box.appendChild(boxStudent);
+ //}
 
 
 

@@ -5135,88 +5135,211 @@
    }
  };
 
+//console.log(data['AQP']['2016-2']['students']['sprints']);
+
 var selectOption = function(event) {
   var option = event.target.selectedIndex;
   var sede = event.target[option].dataset.sede;
   var generacion = event.target[option].dataset.generacion;
-  if (data['AQP']['2016-2']['students']){
-    return aqp1();
-  } else if (data['AQP']['2017-1']['students']) {
-    return aqp2();
-  } else if (data['CDMX']['2017-2']['students']) {
-    return cdmx1();
-  } else if (data['CDMX']['2017-1']['students']) {
-    return cdmx2();
-  } else if (data['LIM']['2016-2']['students']) {
-    return lim1();
-  } else if (data['LIM']['2017-1']['students']) {
-    return lim2();
-  } else if (data['LIM']['2017-2']['students']) {
-    return lim3();
-  } else if (data['SCL']['2016-2']['students']) {
-    return scl1();
-  } else if (data['SCL']['2017-1']['students']) {
-    return scl2();
-  } else if (data['SCL']['2017-2']['students']) {
-    return scl3();
-  }
 
+  if (data['AQP']['2016-2']['students']) {
+    return aqp1();
+  } else if ( data['AQP']['2017-1']['students']) {
+      return aqp2();
+  } else if (data['CDMX']['2017-2']['students']) {
+      return cdmx1();
+  } else if (data['CDMX']['2017-1']['students']) {
+      return cdmx2();
+  } else if (data['LIM']['2016-2']['students']) {
+      return lim1();
+  } else if (data['LIM']['2017-1']['students']) {
+      return lim2();
+  } else if (data['LIM']['2017-2']['students']) {
+      return lim3();
+  } else if (data['SCL']['2016-2']['students']) {
+      return scl1();
+  } else if (data['SCL']['2017-1']['students']) {
+      return scl2();
+  } else if (data['SCL']['2017-2']['students']) {
+      return scl3();
+  }
 }
 
+//function aqpSprints(){
+  //var sprints = data['AQP']['2016-2']['students']['sprints'];
+
+  //for(var j = 0; j < sprint.length; j++){
+    //var numberSprint = sprint[i]['number'];
+
+    //var box = document.getElementById('contenedor');
+    //var parragraph = document.createElement('p');
+    //var boxSprint = document.createElement('div');
+
+    //parragraph.classList('sprintNum');
+    //boxSprint.classList('numS');
+    //parragraph.innerText = numberSprint;
+
+    //boxSprint.appendChild(parragraph);
+    //box.appendChild(boxSprint);
+
+  //}
+//}
+//console.log(data['AQP']['2016-2']['students']['sprint'][0]);
+
+//var selectOption = function(event) {
+//  var option = event.target.selectedIndex;
+//  var sede = event.target[option].dataset.sede;
+//  var generacion = event.target[option].dataset.generacion;
+//  if (data['AQP']['2016-2']['students']) {
+    //return aqp2();
+    //document.getElementById('contenedor').innerHTML = "";
+  //}
+//}
+
 function aqp1(){
+  //var students = document.getElementById('aqpUno');
   var students = data['AQP']['2016-2']['students'];
+  //document.getElementById('contenedor').innerHTML= "";
   for(var i = 0; i < students.length; i++){
     var studentName = students[i]['name'];
     var img = students[i]['photo'];
 
-    console.log(students);
-    console.log(studentName);
-    console.log(img);
 
     var box = document.getElementById('contenedor');
     var parragraph = document.createElement('p');
     var image = document.createElement('img');
     var boxStudent = document.createElement('div');
 
+    //var parragraphSprint1 = document.createElement('p');
+    //var parragraphSprint2 = document.createElement('p');
+    //var parragraphSprint3 = document.createElement('p');
+    //var parragraphSprint4 = document.createElement('p');
+    //var boxSprint = document.createElement('div');
+
     image.classList.add('foto');
     boxStudent.classList.add('alumna');
+    parragraph.classList.add('nombre');
     parragraph.innerText = studentName;
     image.src = img;
+
+    //parragraphSprint1.classList.add('designSprint');
+    //parragraphSprint2.classList.add('designSprint');
+    //parragraphSprint3.classList.add('designSprint');
+    //parragraphSprint4.classList.add('designSprint');
+    //parragraphSprint1.textContent = '1';
+    //parragraphSprint2.textContent = '2';
+    //parragraphSprint3.textContent = '3';
+    //parragraphSprint4.textContent = '4';
+    //boxSprint.classList.add('sprintBox');
 
     boxStudent.appendChild(parragraph);
     boxStudent.appendChild(image);
     box.appendChild(boxStudent);
 
+    //boxSprint.appendChild(parragraphSprint1);
+    //boxSprint.appendChild(parragraphSprint2);
+    //boxSprint.appendChild(parragraphSprint3);
+    //boxSprint.appendChild(parragraphSprint4);
+    //box.appendChild(boxStudent);
 
   }
-
 }
-aqp1();
+//aqp1();
 
-//box.innerHTML = "";
+function aqp2(){
+//var students = document.getElementById('aqpDos'); NO
+var students = data['AQP']['2017-1']['students'];
+//document.getElementById('contenedor').innerHTML = ""; NO
+for(var i = 0; i < students.length; i++){
+  var studentName = students[i]['name'];
+  var img = students[i]['photo'];
 
-//function aqp2(){
-  //var students = data['AQP']['2017-1']['students'];
-  //document.getElementById('contenedor').innerHTML= ""
-  //for(var i = 0; i < 4; i++){
-  //  var studentName = students[i].name;
-  //  var img = students[i].photo;
-  //  showInfo(name, photo);
+   var box = document.getElementById('contenedor');
+   var parragraph = document.createElement('p');
+   var image = document.createElement('img');
+   var boxStudent = document.createElement('div');
+
+   image.classList.add('foto');
+   boxStudent.classList.add('alumna');
+   parragraph.innerText = studentName;
+   image.src = img;
+   boxStudent.appendChild(parragraph);
+   boxStudent.appendChild(image);
+   box.appendChild(boxStudent);
+ }
+}
+//aqp2()
+
+function cdmx1(){
+var students = data['AQP']['2016-2']['students'];
+//document.getElementById('contenedor').innerHTML= ""; NO
+for(var i = 0; i < students.length; i++){
+  var studentName = students[i]['name'];
+  var img = students[i]['photo'];
+
+   var box = document.getElementById('contenedor');
+   var parragraph = document.createElement('p');
+   var image = document.createElement('img');
+   var boxStudent = document.createElement('div');
+
+   image.classList.add('foto');
+   boxStudent.classList.add('alumna');
+   parragraph.innerText = studentName;
+   image.src = img;
+
+   boxStudent.appendChild(parragraph);
+   boxStudent.appendChild(image);
+   box.appendChild(boxStudent);
+  }
+ }
+
+//function info() {
+//  var infoGnral = data['AQP']['2016-2']['ratings'];
+//  for (var i = 0; i < infoGnral.length; i++) {
+  //  var sprint = infoGnral[i]['sprint'];
+    //var calificacion = infoGnral[i]['student']['no-cumple'];
+    //var calificacion2 = infoGnral[i]['student']['cumple'];
+    //var supera = infoGnral[i]['student']['supera'];
+  //  var profe = infoGnral[i]['teacher'];
+  //
+  //  var boxGnral = document.getElementById('general');
+  //  var p1 = document.createElement('p');
+  //  var p2 = document.createElement('p');
+  //  var p3 = document.createElement('p');
+    //var p4 = document.createElement('p');
+    //var p5 = document.createElement('p');
+    //var p6 = document.createElement('p');
+  //  var box2 = document.createElement('div');
+
+  //  boxGnral.classList.add('designGnral');
+  //  p1.innerText = sprint;
+  //  p2.innerText = profe;
+  //  p3.innerText = jedi;
+
+
   //}
-//}
 
-//var showInfo = function(){
-   //var box = document.getElementById('contenedor');
-  // var parragraph = document.createElement('p');
-  // var image = document.createElement('img');
-  // var boxStudent = document.createElement('div');
+  //}
 
-  // image.classList.add('foto');
-  // boxStudent.classList.add('alumna');
-  // parragraph.innerText = name;
 
-  // boxStudent.appendChild(parragraph);
-  // box.appendChild(boxStudent);
+
+
+
+
+//function showInfo(){
+  //var box = document.getElementById('contenedor');
+  //var parragraph = document.createElement('p');
+  //var image = document.createElement('img');
+  //var boxStudent = document.createElement('div');
+
+  //image.classList.add('foto');
+  //boxStudent.classList.add('alumna');
+  //parragraph.innerText = studentName;
+  //image.src = img;
+
+  //boxStudent.appendChild(parragraph);
+  //boxStudent.appendChild(image);
+  //box.appendChild(boxStudent);
  //}
 
 

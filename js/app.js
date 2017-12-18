@@ -5210,7 +5210,7 @@ function aqp1(){
     var image = document.createElement('img');
     var boxStudent = document.createElement('div');
 
-    //var parragraphSprint1 = document.createElement('p');
+    var parragraphSprint1 = document.createElement('p');
     //var parragraphSprint2 = document.createElement('p');
     //var parragraphSprint3 = document.createElement('p');
     //var parragraphSprint4 = document.createElement('p');
@@ -5222,11 +5222,11 @@ function aqp1(){
     parragraph.innerText = studentName;
     image.src = img;
 
-    //parragraphSprint1.classList.add('designSprint');
+    parragraphSprint1.classList.add('designSprint');
     //parragraphSprint2.classList.add('designSprint');
     //parragraphSprint3.classList.add('designSprint');
     //parragraphSprint4.classList.add('designSprint');
-    //parragraphSprint1.textContent = '1';
+    parragraphSprint1.textContent = 'HOLA';
     //parragraphSprint2.textContent = '2';
     //parragraphSprint3.textContent = '3';
     //parragraphSprint4.textContent = '4';
@@ -5234,6 +5234,7 @@ function aqp1(){
 
     boxStudent.appendChild(parragraph);
     boxStudent.appendChild(image);
+    boxStudent.appendChild(parragraphSprint1);
     box.appendChild(boxStudent);
 
     //boxSprint.appendChild(parragraphSprint1);
@@ -5293,33 +5294,33 @@ for(var i = 0; i < students.length; i++){
   }
  }
 
-//function info() {
-//  var infoGnral = data['AQP']['2016-2']['ratings'];
-//  for (var i = 0; i < infoGnral.length; i++) {
-  //  var sprint = infoGnral[i]['sprint'];
-    //var calificacion = infoGnral[i]['student']['no-cumple'];
-    //var calificacion2 = infoGnral[i]['student']['cumple'];
-    //var supera = infoGnral[i]['student']['supera'];
-  //  var profe = infoGnral[i]['teacher'];
-  //
-  //  var boxGnral = document.getElementById('general');
-  //  var p1 = document.createElement('p');
-  //  var p2 = document.createElement('p');
-  //  var p3 = document.createElement('p');
-    //var p4 = document.createElement('p');
-    //var p5 = document.createElement('p');
-    //var p6 = document.createElement('p');
-  //  var box2 = document.createElement('div');
+function info() {
+  var infoGnral = data['AQP']['2016-2']['ratings'];
+  for (var i = 0; i < infoGnral.length; i++) {
+    var sprint = infoGnral[i]['sprint'];
+    var calificacion = infoGnral[i]['student']['no-cumple'];
+    var calificacion2 = infoGnral[i]['student']['cumple'];
+    var supera = infoGnral[i]['student']['supera'];
+    var profe = infoGnral[i]['teacher'];
 
-  //  boxGnral.classList.add('designGnral');
-  //  p1.innerText = sprint;
-  //  p2.innerText = profe;
-  //  p3.innerText = jedi;
+    var boxGnral = document.getElementById('general');
+    var p1 = document.createElement('p');
+    var p2 = document.createElement('p');
+    var p3 = document.createElement('p');
+    var p4 = document.createElement('p');
+    var p5 = document.createElement('p');
+    var p6 = document.createElement('p');
+    var box2 = document.createElement('div');
+
+    boxGnral.classList.add('designGnral');
+    p1.innerText = sprint;
+    p2.innerText = profe;
+    p3.innerText = jedi;
 
 
-  //}
+  }
 
-  //}
+  }
 
 
 

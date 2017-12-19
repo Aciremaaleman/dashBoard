@@ -5157,6 +5157,27 @@ var obtenerDatos1 = function() {
     var spt3 = students[i]['sprints'][2]['number'];
     var spt4 = students[i]['sprints'][3]['number'];
 
+    var spt5 = document.createElement('p');
+    var spt6 = document.createElement('p');
+    var spt7 = document.createElement('p');
+    var spt8 = document.createElement('p');
+    //var title1 = document.createElement('p');
+    var sptD = document.createElement('div');
+
+    sptD.classList.add('designSprintN');
+    //title1.textContent = 'Sprint';
+    //title1.classList.add('titleD');
+    spt5.innerText = spt1;
+    spt6.innerText = spt2;
+    spt7.innerText = spt3;
+    spt8.innerText = spt4;
+
+    sptD.appendChild(spt5);
+    sptD.appendChild(spt6);
+    sptD.appendChild(spt7);
+    sptD.appendChild(spt8);
+    //sptD.appendChild(title1);
+
     var score1 = students[i]['sprints'][0]['score']['tech'];
     var score2 = students[i]['sprints'][1]['score']['tech'];
     var score3 = students[i]['sprints'][2]['score']['tech'];
@@ -5166,8 +5187,11 @@ var obtenerDatos1 = function() {
     var score6 = document.createElement('p');
     var score7 = document.createElement('p');
     var score8 = document.createElement('p');
+    //var title2 = document.createElement('p');
     var scoreD = document.createElement('div');
 
+    //title2.textContent = 'Score Tech';
+    //title2.classList.add('titleD');
     scoreD.classList.add('designScore');
     score5.innerText = score1;
     score6.innerText = score2;
@@ -5178,31 +5202,43 @@ var obtenerDatos1 = function() {
     scoreD.appendChild(score6);
     scoreD.appendChild(score7);
     scoreD.appendChild(score8);
+    //scoreD.appendChild(title2);
 
-    var spt5 = document.createElement('p');
-    var spt6 = document.createElement('p');
-    var spt7 = document.createElement('p');
-    var spt8 = document.createElement('p');
-    var sptD = document.createElement('div');
+    var hse1 = students[i]['sprints'][0]['score']['hse'];
+    var hse2 = students[i]['sprints'][1]['score']['hse'];
+    var hse3 = students[i]['sprints'][2]['score']['hse'];
+    var hse4 = students[i]['sprints'][3]['score']['hse'];
 
-    sptD.classList.add('designSprintN');
-    spt5.innerText = spt1;
-    spt6.innerText = spt2;
-    spt7.innerText = spt3;
-    spt8.innerText = spt4;
+    var  hse5 = document.createElement('p');
+    var  hse6 = document.createElement('p');
+    var  hse7 = document.createElement('p');
+    var  hse8 = document.createElement('p');
+    var  hseD = document.createElement('div');
+    //var title3 = document.createElement('p');
 
-    sptD.appendChild(spt5);
-    sptD.appendChild(spt6);
-    sptD.appendChild(spt7);
-    sptD.appendChild(spt8);
+    hseD.classList.add('designScore');
+    //title3.textContent = 'Score HSE';
+    //title3.classList.add('titleD');
+    hse5.innerText = score1;
+    hse6.innerText = score2;
+    hse7.innerText = score3;
+    hse8.innerText = score4;
+
+    hseD.appendChild(hse5);
+    hseD.appendChild(hse6);
+    hseD.appendChild(hse7);
+    hseD.appendChild(hse8);
+    //hseD.appendChild(title1);
 
     var box = document.getElementById('contenedor');
     var pAct = document.createElement('p');
     var parragraph = document.createElement('p');
     var image = document.createElement('img');
     var boxStudent = document.createElement('div');
+    var boxgneral = document.createElement('div');
 
     image.classList.add('foto');
+    boxgneral.classList.add('bxGnral')
     boxStudent.classList.add('alumna');
     parragraph.classList.add('nombre');
     pAct.classList.add('actD');
@@ -5214,8 +5250,11 @@ var obtenerDatos1 = function() {
     boxStudent.appendChild(pAct);
     boxStudent.appendChild(image);
     box.appendChild(boxStudent);
-    boxStudent.appendChild(sptD);
-    boxStudent.appendChild(scoreD);
+    boxgneral.appendChild(sptD)
+    boxgneral.appendChild(scoreD);
+    boxgneral.appendChild(hseD);
+    boxStudent.appendChild(boxgneral);
+
   }
  }
 
@@ -5236,22 +5275,6 @@ var obtenerDatos1 = function() {
     // box.appendChild(boxSprint);
  // }
 // }
-
-
-// var spt1 = students[i]['sprints'][0]['number'];
-// var spt2 = students[i]['sprints'][1]['number'];
-// var spt3 = students[i]['sprints'][2]['number'];
-// var spt4 = students[i]['sprints'][3]['number'];
-
-// var score1 = students[i]['sprints'][0]['score']['tech'];
-// var score2 = students[i]['sprints'][1]['score']['tech'];
-// var score3 = students[i]['sprints'][2]['score']['tech'];
-// var score4 = students[i]['sprints'][3]['score']['tech'];
-
-// var hse1 = students[i]['sprints'][0]['score']['hse'];
-// var hse2 = students[i]['sprints'][1]['score']['hse'];
-// var hse3 = students[i]['sprints'][2]['score']['hse'];
-// var hse4 = students[i]['sprints'][3]['score']['hse'];
 
 var obtenerDatos2 = function(){
  var students = data['AQP']['2017-1']['students'];
@@ -5515,45 +5538,6 @@ var obtenerDatos10 = function() {
  }
 }
 
-    // var spt1 = students[i]['sprints'][0]['number'];
-    // var spt2 = students[i]['sprints'][1]['number'];
-    // var spt3 = students[i]['sprints'][2]['number'];
-    // var spt4 = students[i]['sprints'][3]['number'];
-
-    // var score1 = students[i]['sprints'][0]['score']['tech'];
-    // var score2 = students[i]['sprints'][1]['score']['tech'];
-    // var score3 = students[i]['sprints'][2]['score']['tech'];
-    // var score4 = students[i]['sprints'][3]['score']['tech'];
-
-    // var hse1 = students[i]['sprints'][0]['score']['hse'];
-    // var hse2 = students[i]['sprints'][1]['score']['hse'];
-    // var hse3 = students[i]['sprints'][2]['score']['hse'];
-    // var hse4 = students[i]['sprints'][3]['score']['hse'];
-
-
-
-  // for(var j = 0; j < spt1.length; j++){
-    // students[i]['sprints'][j]['number'];
-    // var scoreStudent = spt[j]['score'];
-    // console.log(students);
-    // console.log(spt1);
-    // console.log(spt2);
-    // console.log(spt3);
-    // console.log(spt4);
-    // console.log(score1);
-    // console.log(score2);
-    // console.log(score3);
-    // console.log(score4);
-    // console.log(hse1);
-    // console.log(hse2);
-    // console.log(hse3);
-    // console.log(hse4);
-
-
-
-// }
-
-
 //var tablero = function() {
     //var box = document.getElementById('contenedor');
     //var pAct = document.createElement('p');
@@ -5575,50 +5559,38 @@ var obtenerDatos10 = function() {
     //box.appendChild(boxStudent);
 //}
 
+function info() {
+ var infoGnral = data['AQP']['2016-2']['ratings'];
+  for (var i = 0; i < infoGnral.length; i++) {
+   var sprint = infoGnral[i]['sprint'];
+   var nps = infoGnral[i]['nps'];
+   var promoters = infoGnral[i]['nps']['promoters'];
+   var passive = infoGnral[i]['nps']['passive'];
+   var promoters = infoGnral[i]['nps']['detractors'];
+   var calificacion = infoGnral[i]['student']['no-cumple'];
+   var calificacion2 = infoGnral[i]['student']['cumple'];
+   var supera = infoGnral[i]['student']['supera'];
+   var profe = infoGnral[i]['teacher'];
+   var jedi = infoGnral[i]['jedi'];
 
+   console.log(sprint);
+   console.log(nps);
+   console.log(promoters);
+   console.log(passive);
+   console.log(promoters);
+   console.log(calificacion);
+   console.log(calificacion2);
+   console.log(supera);
+   console.log(profe);
+   console.log(jedi);
 
-
-
-
-//function info() {
-//  var infoGnral = data['AQP']['2016-2']['ratings'];
-//  for (var i = 0; i < infoGnral.length; i++) {
-//    var sprint = infoGnral[i]['sprint'];
-//    var calificacion = infoGnral[i]['student']['no-cumple'];
-//    var calificacion2 = infoGnral[i]['student']['cumple'];
-//    var supera = infoGnral[i]['student']['supera'];
-//    var profe = infoGnral[i]['teacher'];
-
-//    var boxGnral = document.getElementById('general');
-//    var p1 = document.createElement('p');
-//    var p2 = document.createElement('p');
-//    var p3 = document.createElement('p');
-//    var p4 = document.createElement('p');
-  //  var p5 = document.createElement('p');
-  //  var p6 = document.createElement('p');
-  //  var box2 = document.createElement('div');
-
-  //  boxGnral.classList.add('designGnral');
-  //  p1.innerText = sprint;
-  //  p2.innerText = profe;
-  //  p3.innerText = jedi;
-
-  //}
-  //}
-
-
-
-
-//console.log(data['CDMX']['2017-1']['students']);
-//console.log(data['CDMX']['2017-2']['students']);
-
-//console.log(data['AQP']['2016-2']['students']);
-//console.log(data['AQP']['2017-1']['students']);
-
-//console.log(data['LIM']['2016-2']['students']);
-//console.log(data['LIM']['2017-1']['students']);
-//console.log(data['LIM']['2017-2']['students']);
-
-//console.log(data['SCL']['2016-2']['students']);
-//console.log(data['SCL']['2017-1']['students']);
-//console.log(data['SCL']['2017-2']['students']);
+   var boxGnral = document.getElementById('general');
+   var p1 = document.createElement('p');
+   var p2 = document.createElement('p');
+   var p3 = document.createElement('p');
+   var p4 = document.createElement('p');
+   var p5 = document.createElement('p');
+   var p6 = document.createElement('p');
+   var box2 = document.createElement('div');
+ }
+}

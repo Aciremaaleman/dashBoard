@@ -37,13 +37,21 @@
  	padding-left: 30px;
  	padding-top: 30px;}
 
+.actD {
+  margin: 0px 200px;
+}
  .alumna{
    background-color: #ededed;
    height: 300px;
    margin: 5px;
  }
 
-
+.designSprintN{
+  margin: 40px 0px;
+  size: 50px;
+  float: right;
+  color: black;
+}
 
 .foto{
   width: 250px;

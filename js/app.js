@@ -5141,7 +5141,8 @@ var selectOption = function(event) {
   var option = event.target.selectedIndex;
   var sede = event.target[option].dataset.sede;
   var generacion = event.target[option].dataset.generacion;
-
+  obtenerDatos();
+  
   if (data['AQP']['2016-2']['students']) {
     return aqp1();
   } else if ( data['AQP']['2017-1']['students']) {
@@ -5199,18 +5200,26 @@ var selectOption = function(event) {
 function aqp1(){
   //var students = document.getElementById('aqpUno');
   var students = data['AQP']['2016-2']['students'];
+
+  //data.AQP Ó data['AQP']
   //document.getElementById('contenedor').innerHTML= "";
   for(var i = 0; i < students.length; i++){
     var studentName = students[i]['name'];
     var img = students[i]['photo'];
+    var act = students[i]['active'];
+    var spt = students[i]['sprints'];
+
+  for(var j = 0; j < students.length; j++){
+
 
 
     var box = document.getElementById('contenedor');
+    var pAct = document.createElement('p');
     var parragraph = document.createElement('p');
     var image = document.createElement('img');
     var boxStudent = document.createElement('div');
 
-    var parragraphSprint1 = document.createElement('p');
+
     //var parragraphSprint2 = document.createElement('p');
     //var parragraphSprint3 = document.createElement('p');
     //var parragraphSprint4 = document.createElement('p');
@@ -5219,20 +5228,22 @@ function aqp1(){
     image.classList.add('foto');
     boxStudent.classList.add('alumna');
     parragraph.classList.add('nombre');
+    pAct.classList.add('actD');
     parragraph.innerText = studentName;
+    pAct.innerText = act;
     image.src = img;
 
-    parragraphSprint1.classList.add('designSprint');
+
     //parragraphSprint2.classList.add('designSprint');
     //parragraphSprint3.classList.add('designSprint');
     //parragraphSprint4.classList.add('designSprint');
-    parragraphSprint1.textContent = 'HOLA';
     //parragraphSprint2.textContent = '2';
     //parragraphSprint3.textContent = '3';
     //parragraphSprint4.textContent = '4';
     //boxSprint.classList.add('sprintBox');
 
     boxStudent.appendChild(parragraph);
+    boxStudent.appendChild(pAct);
     boxStudent.appendChild(image);
     boxStudent.appendChild(parragraphSprint1);
     box.appendChild(boxStudent);
@@ -5242,8 +5253,8 @@ function aqp1(){
     //boxSprint.appendChild(parragraphSprint3);
     //boxSprint.appendChild(parragraphSprint4);
     //box.appendChild(boxStudent);
-
   }
+ }
 }
 //aqp1();
 

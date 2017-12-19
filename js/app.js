@@ -5141,8 +5141,7 @@ var selectOption = function(event) {
   var option = event.target.selectedIndex;
   var sede = event.target[option].dataset.sede;
   var generacion = event.target[option].dataset.generacion;
-  obtenerDatos();
-  
+
   if (data['AQP']['2016-2']['students']) {
     return aqp1();
   } else if ( data['AQP']['2017-1']['students']) {
@@ -5210,7 +5209,6 @@ function aqp1(){
     var spt = students[i]['sprints'];
 
   for(var j = 0; j < students.length; j++){
-
 
 
     var box = document.getElementById('contenedor');

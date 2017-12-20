@@ -5157,93 +5157,95 @@ var obtenerDatos1 = function() {
     var spt3 = students[i]['sprints'][2]['number'];
     var spt4 = students[i]['sprints'][3]['number'];
 
+    var title1 = document.createElement('p');
     var spt5 = document.createElement('p');
     var spt6 = document.createElement('p');
     var spt7 = document.createElement('p');
     var spt8 = document.createElement('p');
-    //var title1 = document.createElement('p');
     var sptD = document.createElement('div');
 
     sptD.classList.add('designSprintN');
-    //title1.textContent = 'Sprint';
-    //title1.classList.add('titleD');
+    title1.textContent = 'Sprint';
+    title1.classList.add('titleSprint');
     spt5.innerText = spt1;
     spt6.innerText = spt2;
     spt7.innerText = spt3;
     spt8.innerText = spt4;
 
-    spt5.textContent = "Sprint"
-    spt6.textContent = "Sprint"
-    spt7.textContent = "Sprint"
-    spt8.textContent = "Sprint"
+    // spt5.textContent = "Sprint";
+    // spt6.textContent = "Sprint";
+    // spt7.textContent = "Sprint";
+    // spt8.textContent = "Sprint";
 
+    sptD.appendChild(title1);
     sptD.appendChild(spt5);
     sptD.appendChild(spt6);
     sptD.appendChild(spt7);
     sptD.appendChild(spt8);
-    //sptD.appendChild(title1);
+
 
     var score1 = students[i]['sprints'][0]['score']['tech'];
     var score2 = students[i]['sprints'][1]['score']['tech'];
     var score3 = students[i]['sprints'][2]['score']['tech'];
     var score4 = students[i]['sprints'][3]['score']['tech'];
 
+    var title2 = document.createElement('p');
     var score5 = document.createElement('p');
     var score6 = document.createElement('p');
     var score7 = document.createElement('p');
     var score8 = document.createElement('p');
-    //var title2 = document.createElement('p');
     var scoreD = document.createElement('div');
 
-    //title2.textContent = 'Score Tech';
-    //title2.classList.add('titleD');
+    title2.textContent = 'Score Tech';
+    title2.classList.add('titleTech');
     scoreD.classList.add('designScore');
     score5.innerText = score1;
     score6.innerText = score2;
     score7.innerText = score3;
     score8.innerText = score4;
 
-    score5.textContent = "Tech"
-    score6.textContent = "Tech"
-    score7.textContent = "Tech"
-    score8.textContent = "Tech"
+    // score5.textContent = "Tech";
+    // score6.textContent = "Tech";
+    // score7.textContent = "Tech";
+    // score8.textContent = "Tech";
 
     scoreD.appendChild(score5);
     scoreD.appendChild(score6);
     scoreD.appendChild(score7);
     scoreD.appendChild(score8);
-    //scoreD.appendChild(title2);
+    scoreD.appendChild(title2);
 
     var hse1 = students[i]['sprints'][0]['score']['hse'];
     var hse2 = students[i]['sprints'][1]['score']['hse'];
     var hse3 = students[i]['sprints'][2]['score']['hse'];
     var hse4 = students[i]['sprints'][3]['score']['hse'];
 
+    var title3 = document.createElement('p');
     var  hse5 = document.createElement('p');
     var  hse6 = document.createElement('p');
     var  hse7 = document.createElement('p');
     var  hse8 = document.createElement('p');
     var  hseD = document.createElement('div');
-    //var title3 = document.createElement('p');
+
 
     hseD.classList.add('designScore');
-    //title3.textContent = 'Score HSE';
-    //title3.classList.add('titleD');
+    title3.textContent = 'Score HSE';
+    title3.classList.add('titleHse');
     hse5.innerText = score1;
     hse6.innerText = score2;
     hse7.innerText = score3;
     hse8.innerText = score4;
 
-    hse5.textContent = "HSE";
-    hse6.textContent = "HSE";
-    hse7.textContent = "HSE";
-    hse8.textContent = "HSE";
+    // hse5.textContent = "HSE";
+    // hse6.textContent = "HSE";
+    // hse7.textContent = "HSE";
+    // hse8.textContent = "HSE";
 
     hseD.appendChild(hse5);
     hseD.appendChild(hse6);
     hseD.appendChild(hse7);
     hseD.appendChild(hse8);
-    //hseD.appendChild(title1);
+    hseD.appendChild(title3);
 
     var box = document.getElementById('contenedor');
     var pAct = document.createElement('p');

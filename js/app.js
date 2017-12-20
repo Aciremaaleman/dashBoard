@@ -5139,21 +5139,19 @@ var selectOption = function(event) {
   var option = event.target.selectedIndex;
   var sede = event.target[option].dataset.sede;
   var generacion = event.target[option].dataset.generacion;
-  obtenerDatos1(sede, generacion);
-  obtenerDatos2(sede, generacion);
 
-}
-
-var obtenerDatos1 = function(sede, generacion) {
-  console.log(sede, generacion);
+var obtenerDatos1 = sede, generacion
   var students = data[sede][generacion]['students'];
-  console.log(students);
+
   document.getElementById('contenedor').innerHTML = "";
   for(var i = 0; i < students.length; i++){
     var studentName = students[i]['name'];
-    console.log(studentName);
     var img = students[i]['photo'];
     var act = students[i]['active'];
+    // var spt = students[i]['sprints'];
+
+  // for(var j = 0; j < students.length; j++){
+    // var numberSprint = spt[j]['number'];
 
     var spt1 = students[i]['sprints'][0]['number'];
     var spt2 = students[i]['sprints'][1]['number'];
@@ -5261,9 +5259,8 @@ var obtenerDatos1 = function(sede, generacion) {
     boxgneral.appendChild(scoreD);
     boxgneral.appendChild(hseD);
     boxStudent.appendChild(boxgneral);
-
-  }
- }
+   }
+}
 
  var obtenerDatos2 = function(sede, generacion) {
    console.log(sede, generacion);

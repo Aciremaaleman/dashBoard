@@ -1,23 +1,18 @@
-function info() {
- var infoGnral = data['AQP']['2016-2']['ratings'];
-  for (var i = 0; i < infoGnral.length; i++) {
-    var sprint = infoGnral[i]['sprint'];
+document.getElementById('npsStudent');
 
-    console.log(sprint);
-    console.log(infoGnral);
+function nps() {
+  var npsS = data['AQP']['2016-2']['ratings'];
+  for (var k = 0; k < nps.length; k++){
+    var npsprom = npsS[k]['promoters'];
+    var npspassive = npsS[k]['passive'];
+    var npsdetrac = npsS[k]['detractors'];
 
-    var boxGnral = document.getElementById('general');
-    var sprintP = document.createElement('p');
-    var box2 = document.createElement('div');
+    var boxG = document.getElementById('general');
+    var 
 
-    sprintP.classList.add('pStyle1');
-    box2.classList.add('sprintS');
-
-    box2.appendChild(sprintP);
-    boxGnral.appendChild(box2);
-
-
-
-
- }
+  }
+   console.log(npsS);
+   console.log(npsprom);
+   console.log(npspassive);
+   console.log(npsdetrac);
 }

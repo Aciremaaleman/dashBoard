@@ -3,6 +3,9 @@ function info() {
   for (var i = 0; i < infoGnral.length; i++) {
     var sprint = infoGnral[i]['sprint'];
 
+    console.log(sprint);
+    console.log(infoGnral);
+
     var boxGnral = document.getElementById('general');
     var sprintP = document.createElement('p');
     var box2 = document.createElement('div');
@@ -12,6 +15,7 @@ function info() {
 
     box2.appendChild(sprintP);
     boxGnral.appendChild(box2);
+
 
 
 

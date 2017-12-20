@@ -177,6 +177,7 @@
     cursor: pointer;
     transition: all 2s ease;}
 
+
 .DesignButtonLog{
 	clear: both;
 	float: left;
@@ -219,7 +220,7 @@ input{
 	font-family: sans-serif;
 	text-transform: uppercase;
 	font-size: 15px;
-	color: #ededed
+	color: black;
 }
 
 

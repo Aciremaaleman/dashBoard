@@ -2,81 +2,110 @@
  * Estilos de tu proyecto
  */
  main > select{
- 	font-family: sans-serif;
- 	font-size: 15px;
- 	border: 0px solid black;
- 	border-bottom: 1px solid black;
-  margin-left: 30px;
-  height: 50px;
-  width: 500px;
+	font-family: sans-serif;
+	font-size: 15px;
+	border: 0px solid black;
+	border-bottom: 1px solid black;}
 
+a{
+	font-family: sans-serif;
+	font-size: 18px;
+	color: black;
+    text-decoration: none;
+    cursor: default;
 }
 
+#contenedor{
+	width: 950px;
+	float: right;
+	margin: 50px 5px;
+	background-color: #ededed;
+}
 
- a{
+#general{
+	background-color: blue;
+}
+
+#col-lef{
+	clear: both;
+	float: left;
+	width: 250px;
+	height: 200px;
+	padding-left: 30px;
+	padding-top: 30px;}
+
+.alumna{
+	width: 450px;
+	height: 330px;
+  background-color: #ededed;}
+
+ .nombre{
  	font-family: sans-serif;
- 	font-size: 18px;
- 	color: black;
-     text-decoration: none;
-     cursor: default;
- }
+ 	font-size: 25px;
+ 	margin-left: 270px;
+ 	padding-top: 20px; }
 
- #contenedor{
- 	width: 1000px;
- 	float: right;
- 	margin: 15px 5px;
- }
-
- #col-lef{
+ .foto{
  	clear: both;
  	float: left;
+ 	margin-top: -110px;
  	width: 250px;
- 	height: 200px;
- 	margin-top: -4560px;
- 	padding-left: 30px;
- 	padding-top: 30px;}
+ 	height: 250px;
+ 	background-color: #3d3d3d; }
 
-.actD {
-  margin: 0px 200px;
-}
- .alumna{
-   background-color: #ededed;
-   height: 300px;
-   margin: 5px;
+ .actD{
+ 	clear: both;
+ 	color: white;
+ 	float: right;
+ 	background-color: #3d3d3d;
+ 	margin-right: 125px;
+ 	margin-top: -3px;
+ 	padding: 5px;
+ 	font-family: sans-serif;
+ 	text-transform: uppercase;
  }
+
+.title{
+	font-family: sans-serif;
+	font-size: 22px;
+	font-weight: normal;
+}
+
+.logo{
+	width: 20%;
+	height: auto;
+	padding: 5% 40%;}
+
+.opcions-exp{
+	font-weight: bold;}
 
 .designSprintN{
-  margin: 40px 0px;
-  size: 50px;
-  float: right;
-  color: black;
+	clear: both;
+	float: right;
+	display: inline-block;
+	margin-right: 115px;
+	margin-top: -155px;
+	background-color:;
+	padding: 0px 10px;
+	padding-left: 2px;
+	padding-right: 5px;
+
+	font-family: sans-serif;
+	font-size: 18px;
 }
 
-.foto{
-  width: 250px;
-  height: 250px;
-  margin: 10px;
-  clear: right;
-}
-.nombre{
-  float: right;
-  margin-right: 520px;
-  font-weight: bold;
-}
- .title{
- 	font-family: sans-serif;
- 	font-size: 22px;
- 	font-weight: normal;
- }
- .sprintS{
-   background-color: green;
- }
+.designScore{
+	clear: both;
+	color: white;
+	background-color: #3d3d3d;
+	display: inline-block;
+	margin-left: 90px;
+	margin-top: -15px;
+	padding-right:5px;
 
- .logo{
- 	width: 20%;
- 	height: auto;
- 	padding: 5% 40%;}
-
- .opcions-exp{
- 	font-weight: bold;
- }
+	font-family: sans-serif;
+	font-size: 18px
+}
+.hide {
+  display: none;
+}

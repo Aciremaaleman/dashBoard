@@ -5172,6 +5172,11 @@ var obtenerDatos1 = function() {
     spt7.innerText = spt3;
     spt8.innerText = spt4;
 
+    spt5.textContent = "Sprint"
+    spt6.textContent = "Sprint"
+    spt7.textContent = "Sprint"
+    spt8.textContent = "Sprint"
+
     sptD.appendChild(spt5);
     sptD.appendChild(spt6);
     sptD.appendChild(spt7);
@@ -5198,6 +5203,11 @@ var obtenerDatos1 = function() {
     score7.innerText = score3;
     score8.innerText = score4;
 
+    score5.textContent = "Tech"
+    score6.textContent = "Tech"
+    score7.textContent = "Tech"
+    score8.textContent = "Tech"
+
     scoreD.appendChild(score5);
     scoreD.appendChild(score6);
     scoreD.appendChild(score7);
@@ -5223,6 +5233,11 @@ var obtenerDatos1 = function() {
     hse6.innerText = score2;
     hse7.innerText = score3;
     hse8.innerText = score4;
+
+    hse5.textContent = "HSE";
+    hse6.textContent = "HSE";
+    hse7.textContent = "HSE";
+    hse8.textContent = "HSE";
 
     hseD.appendChild(hse5);
     hseD.appendChild(hse6);
@@ -5562,35 +5577,36 @@ var obtenerDatos10 = function() {
 function info() {
  var infoGnral = data['AQP']['2016-2']['ratings'];
   for (var i = 0; i < infoGnral.length; i++) {
-   var sprint = infoGnral[i]['sprint'];
-   var nps = infoGnral[i]['nps'];
-   var promoters = infoGnral[i]['nps']['promoters'];
-   var passive = infoGnral[i]['nps']['passive'];
-   var promoters = infoGnral[i]['nps']['detractors'];
-   var calificacion = infoGnral[i]['student']['no-cumple'];
-   var calificacion2 = infoGnral[i]['student']['cumple'];
-   var supera = infoGnral[i]['student']['supera'];
-   var profe = infoGnral[i]['teacher'];
-   var jedi = infoGnral[i]['jedi'];
+    var sprint = infoGnral[i]['sprint'];
+    var nps = infoGnral[i]['nps'];
+   // var promoters = infoGnral[i]['nps']['promoters'];
+   // var passive = infoGnral[i]['nps']['passive'];
+   // var promoters = infoGnral[i]['nps']['detractors'];
+   // var calificacion = infoGnral[i]['student']['no-cumple'];
+   // var calificacion2 = infoGnral[i]['student']['cumple'];
+   // var supera = infoGnral[i]['student']['supera'];
+   // var profe = infoGnral[i]['teacher'];
+   // var jedi = infoGnral[i]['jedi'];
 
-   console.log(sprint);
-   console.log(nps);
-   console.log(promoters);
-   console.log(passive);
-   console.log(promoters);
-   console.log(calificacion);
-   console.log(calificacion2);
-   console.log(supera);
-   console.log(profe);
-   console.log(jedi);
+    console.log(sprint);
+    console.log(nps);
+   // console.log(promoters);
+   // console.log(passive);
+   // console.log(promoters);
+   // console.log(calificacion);
+   // console.log(calificacion2);
+   // console.log(supera);
+   // console.log(profe);
+   // console.log(jedi);
 
    var boxGnral = document.getElementById('general');
-   var p1 = document.createElement('p');
-   var p2 = document.createElement('p');
-   var p3 = document.createElement('p');
-   var p4 = document.createElement('p');
-   var p5 = document.createElement('p');
-   var p6 = document.createElement('p');
-   var box2 = document.createElement('div');
+
+   //var p1 = document.createElement('p');
+   //var p2 = document.createElement('p');
+   //var p3 = document.createElement('p');
+   //var p4 = document.createElement('p');
+   //var p5 = document.createElement('p');
+   //var p6 = document.createElement('p');
+   //var box2 = document.createElement('div');
  }
 }

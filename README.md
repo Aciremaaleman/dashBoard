@@ -9,8 +9,8 @@ Deacuerdo a los requerimientos de nuestro cliente:
 
 sketch
 ![](assets/images/sketch.png)
-![](assets/images/sketch1.png)
-![](assets/images/sketch2.png)
+![](assets/images/sketch1.jpg)
+![](assets/images/sketch2.jpg)
 
 1. Primer página login.html link directo a la página overview.html.
 

@@ -7,7 +7,10 @@ Deacuerdo a los requerimientos de nuestro cliente:
   - Información general de cada sede y por generación.
   - Informacion en especifico de cada Alumna.
 
-sketch ![](assets/images/sketch.png)
+sketch
+![](assets/images/sketch.png)
+![](assets/images/sketch1.png)
+![](assets/images/sketch2.png)
 
 1. Primer página login.html link directo a la página overview.html.
 

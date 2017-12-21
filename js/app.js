@@ -10,17 +10,37 @@ var selectOption = function(event) {
 
 function obtenerDatos(sede, generacion) {
   var students = data[sede][generacion]['students'];
-  document.getElementById('contenedor').innerHTML = "";
+  //document.getElementById('contenedor').innerHTML = "";  - funcion para limpiar panel
   for(var i = 0; i < students.length; i++){
     var studentName = students[i]['name'];
     var img = students[i]['photo'];
     var act = students[i]['active'];
+    var sprint = students[i]['sprints'];
 
-    var spt1 = students[i]['sprints'][0]['number'];
-    var spt2 = students[i]['sprints'][1]['number'];
-    var spt3 = students[i]['sprints'][2]['number'];
-    var spt4 = students[i]['sprints'][3]['number'];
+console.log(sprint);
 
+  for( var j = 0; j < students.length; j++){
+    var number = sprint[j]['number'];
+    var score = sprint[j]['score'];
+
+
+
+  for( var k = 0; k < students.length; k++){
+    var tech = score['tech'];
+    var hse = score['hse'];
+
+
+    var spt1 = students[i]['sprint'][0]['number'];
+    var spt2 = students[i]['sprint'][1]['number'];
+    var spt3 = students[i]['sprint'][2]['number'];
+    var spt4 = students[i]['sprint'][3]['number'];
+    console.log('el uno');
+    console.log(spt1);
+    console.log('el dos');
+    console.log(spt2);
+    console.log('el tres');
+    console.log(spt3);
+    console.log('el cuatro');
     console.log(spt4);
 
     var title1 = document.createElement('p');
@@ -124,6 +144,8 @@ function obtenerDatos(sede, generacion) {
     boxgneral.appendChild(scoreD);
     boxgneral.appendChild(hseD);
     boxStudent.appendChild(boxgneral);
+  }
+  }
   }
  }
 }

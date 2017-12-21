@@ -1,0 +1,29 @@
+// num.classList.add('numStudent');
+// techS.classList.add('techStudent');
+// hseS.classList.add('hseStudent');
+// titleSprint.classList.add('titleSprint');
+// titleScore.classList.add('titleScore');
+// titleTech.classList.add('titleTech');
+// sptD.classList.add('designSprintN');
+//
+// titleSprint.textContent = 'Sprint';
+// titleScore.textContent = 'Score';
+// titleTech.textContent = 'Tech'
+// num.innerText = number;
+// techS.innerText = tech;
+// hseS.innerText = hse;
+//
+// boxStudent.appendChild(parragraph);
+// boxStudent.appendChild(pAct);
+// boxStudent.appendChild(image);
+// box.appendChild(boxStudent);
+// boxgneral.appendChild(sptD);
+// boxStudent.appendChild(boxgneral);
+//
+// sptD.appendChild(titleSprint);
+// sptD.appendChild(titleScore);
+// sptD.appendChild(titleTech);
+// sptD.appendChild(num);
+// sptD.appendChild(techS);
+// sptD.appendChild(hseS);
+// sptD.appendChild(spt8);
